@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #d8e3f5;
+  color: #102653;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: #526484;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* statistique cards section */
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statistic-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.statistic-cards card {
+  flex: 1;
+
+  padding: 16px;
+  border: 1px solid #d0daec;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(30, 64, 175, 0.08);
+}
+card p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.first-statistique {
+  background-color: #eaf1fd;
+}
+.second-statistique {
+  color: #22a447;
+  border: 1px solide #d1efdc;
+  background-color: #d1f2dc;
+}
+.second-statistique h5 {
+  color: #102653;
+}
+.third-statistique {
+  background-color: #e8edf5;
+}
+
+/* todo section */
+.todo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.todo-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+hr {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background-color: #64748b;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check-btn {
+  width: 20px;
+  height: 20px;
+  accent-color: #22a447;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+.priorite-date-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.priorite {
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+/* pariorite status */
+.Haute {
+  background-color: #fde2e2;
+  color: #c62828;
+}
+
+.Moyenne {
+  background-color: #dfecff;
+  color: #1769d2;
+}
+
+.Basse {
+  background-color: #e1f6e3;
+  color: #237a35;
+}
+
+/* taches status */
+.terminee {
+  color: #64748b;
+
+  background-color: #d1f2dc;
+}
+.terminee h4 {
+  text-decoration: line-through;
+}
