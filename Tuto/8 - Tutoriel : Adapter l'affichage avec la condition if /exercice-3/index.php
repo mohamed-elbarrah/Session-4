@@ -76,6 +76,8 @@ $toDoLists = [
         };
    };
 
+
+
    $nonTerminees = $totalTasks - $terminees;
 
 require("template-index.php");
