@@ -1,0 +1,75 @@
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+.site-header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-bottom: 1px solid #e7eef6;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #193b68;
+  font-size: 14px;
+}
+.hero {
+  background: #edf5ff;
+}
+.hero-inner {
+  min-height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.hero-copy {
+  flex: 1;
+}
+
+.benefit-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.benefit-list article {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.feature-list {
+  display: flex;
+  align-items: stretch;
+  gap: 22px;
+}
+.feature-card {
+  flex: 1;
+}
+.how-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-steps {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+.how-step {
+  flex: 1;
+}
+.how-cta {
+  align-self: center;
+}
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

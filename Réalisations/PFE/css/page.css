@@ -1,0 +1,529 @@
+.hero-copy {
+  padding: 45px 0;
+}
+.hero-copy h1 {
+  margin-bottom: 18px;
+  color: #102d57;
+  font-size: 49px;
+  line-height: 1.1;
+}
+.hero-copy h1 span {
+  color: #1768e8;
+}
+.hero-copy > p {
+  max-width: 480px;
+  margin-bottom: 23px;
+  font-size: 17px;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero-visual {
+  position: relative;
+  
+}
+.visual-orbit {
+  position: absolute;
+  border-radius: 50%;
+}
+.orbit-blue {
+  width: 300px;
+  height: 300px;
+  top: 41px;
+  left: 90px;
+  background: #1768e8;
+}
+.orbit-yellow {
+  width: 82px;
+  height: 82px;
+  top: 26px;
+  left: 75px;
+  background: #ffca42;
+}
+.dashboard-card {
+  position: relative;
+  z-index: 1;
+  width: 420px;
+  padding: 23px;
+  margin-left: auto;
+  border: 1px solid #e5ecf4;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 15px 35px #15376120;
+}
+.dash-heading,
+.attendance-score,
+.week-heading,
+.next-session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dash-heading > div:first-child > span,
+.art-title {
+  color: #8293a8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+.dash-heading h2 {
+  margin: 6px 0 0;
+  color: #193b68;
+  font-size: 18px;
+}
+.dash-avatar,
+.tiny-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dceaff;
+  color: #1768e8;
+  font-size: 11px;
+  font-weight: 700;
+}
+.dash-avatar {
+  width: 39px;
+  height: 39px;
+}
+.attendance-score {
+  padding: 17px 0 12px;
+  margin-top: 14px;
+  border-top: 1px solid #edf1f6;
+}
+.attendance-score div span,
+.attendance-score div strong {
+  display: block;
+}
+.attendance-score div span {
+  margin-bottom: 4px;
+  color: #71839a;
+  font-size: 12px;
+}
+.attendance-score div strong {
+  color: #17365f;
+  font-size: 28px;
+}
+.score-pill,
+.present-pill {
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #e7f6ec;
+  color: #238347;
+  font-size: 10px;
+  font-weight: 700;
+}
+.score-bar,
+.progress-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #eaf0f6;
+}
+.score-bar span,
+.progress-track span {
+  display: block;
+  width: 96.5%;
+  height: 100%;
+  border-radius: inherit;
+  background: #2b9b5c;
+}
+.week-heading {
+  margin: 20px 0 12px;
+  color: #27466c;
+  font-size: 12px;
+}
+.week-heading span {
+  color: #8492a3;
+  font-size: 10px;
+}
+.week-days {
+  display: flex;
+  justify-content: space-between;
+}
+.week-days div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #8090a4;
+  font-size: 9px;
+}
+.day-check,
+.day-mixed {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #e4f3e9;
+  color: #24874a;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+.day-mixed {
+  background: #fff1c9;
+  color: #c48b00;
+}
+.next-session {
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 15px;
+  margin-top: 16px;
+  border-top: 1px solid #edf1f6;
+}
+.session-symbol {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #eaf2ff;
+  color: #1768e8;
+}
+.next-session div {
+  flex: 1;
+}
+.next-session strong,
+.next-session small {
+  display: block;
+}
+.next-session strong {
+  color: #243f62;
+  font-size: 11px;
+}
+.next-session small {
+  margin-top: 4px;
+  color: #8492a3;
+  font-size: 10px;
+}
+.floating-note {
+  position: absolute;
+  z-index: 2;
+  right: -16px;
+  bottom: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 8px 25px #15376120;
+}
+.floating-note > span {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e7f6ec;
+  color: #238347;
+  font-weight: 700;
+}
+.floating-note strong,
+.floating-note small {
+  display: block;
+}
+.floating-note strong {
+  color: #193b68;
+  font-size: 11px;
+}
+.floating-note small {
+  margin-top: 3px;
+  color: #8492a3;
+  font-size: 9px;
+}
+.benefits {
+  padding: 27px 0;
+  border-bottom: 1px solid #e8eef5;
+}
+.benefit-list h3 {
+  margin-bottom: 5px;
+  color: #17365f;
+  font-size: 15px;
+}
+.benefit-list p {
+  margin: 0;
+  color: #617895;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.features-section {
+  padding: 58px 0 64px;
+}
+.section-intro {
+  margin-bottom: 27px;
+}
+.section-intro h2,
+.how-inner h2 {
+  margin-bottom: 8px;
+  color: #16365f;
+  font-size: 31px;
+}
+.section-intro p,
+.how-inner > div:first-child p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.feature-art {
+  height: 166px;
+  padding: 18px;
+  background: #edf5ff;
+}
+.feature-art .art-title {
+  display: block;
+  margin-bottom: 12px;
+}
+.art-calendar > strong {
+  color: #17365f;
+  font-size: 14px;
+}
+.art-calendar > strong b {
+  color: #8293a8;
+  font-size: 12px;
+}
+.art-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.art-days i {
+  width: 16%;
+  padding: 7px 0;
+  border-radius: 5px;
+  background: #fff;
+  color: #5a7190;
+  text-align: center;
+  font-size: 9px;
+  font-style: normal;
+}
+.art-days i:nth-child(n + 6) {
+  background: #dcefe2;
+  color: #277847;
+  font-weight: 700;
+}
+.art-attendance {
+  background: #fff5d9;
+}
+.attendance-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f2ead4;
+}
+.tiny-avatar {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  font-size: 8px;
+}
+.yellow-avatar {
+  background: #ffedbb;
+  color: #aa7a00;
+}
+.attendance-line strong {
+  flex: 1;
+  color: #294361;
+  font-size: 10px;
+}
+.attendance-line i {
+  color: #27834b;
+  font-size: 9px;
+  font-style: normal;
+}
+.attendance-line i.late-label {
+  color: #bd8700;
+}
+.art-progress {
+  background: #eaf5ed;
+}
+.progress-number {
+  display: block;
+  margin: 2px 0 10px;
+  color: #1e7743;
+  font-size: 32px;
+}
+.progress-number span {
+  font-size: 19px;
+}
+.progress-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  color: #6e8376;
+  font-size: 9px;
+}
+.progress-foot b {
+  color: #27834b;
+}
+.feature-copy {
+  padding: 19px 20px 22px;
+}
+.feature-copy h3 {
+  margin: 8px 0;
+  color: #17365f;
+  font-size: 18px;
+}
+.feature-copy p {
+  margin: 0;
+  color: #607794;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.how-section {
+  padding: 58px 0 62px;
+  background: #edf5ff;
+}
+.heading{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.how-heading {
+  margin-bottom: 31px;
+}
+.how-inner h2 {
+  margin-bottom: 9px;
+  line-height: 1.2;
+}
+.how-inner .how-heading p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.how-steps {
+  width: 100%;
+  margin-bottom: 27px;
+}
+.how-step {
+  min-height: 166px;
+  padding: 20px;
+  border: 1px solid #dce8f6;
+  border-radius: 10px;
+  background: #fff;
+}
+.step-number {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  border-radius: 50%;
+  background: #dceaff;
+  color: #1768e8;
+  font-size: 13px;
+  font-weight: 700;
+}
+.how-step h3 {
+  margin-bottom: 8px;
+  color: #17365f;
+  font-size: 17px;
+}
+.how-step p {
+  margin-bottom: 0;
+  color: #607794;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.how-cta {
+  align-self: center;
+}
+.site-footer {
+  min-height: 76px;
+  padding: 14px;
+  border-top: 1px solid #e7eef6;
+  color: #58708e;
+  font-size: 12px;
+}
+.site-footer .brand {
+  font-size: 21px;
+}
+.site-footer small {
+  font-size: 11px;
+}
+
+/* Readable page scale: body copy stays at 1rem and supporting text stays above 0.75rem. */
+.hero-copy h1 {
+  font-size: clamp(2.75rem, 4vw, 3.5rem);
+}
+
+.hero-copy > p,
+.section-intro p,
+.how-inner > div:first-child p {
+  font-size: 1.125rem;
+}
+
+.eyebrow,
+.feature-number {
+  font-size: 0.75rem;
+}
+
+.benefit-list h3 {
+  font-size: 1.125rem;
+}
+
+.benefit-list p,
+.feature-copy p,
+.how-step p {
+  font-size: 1rem;
+}
+
+.feature-copy h3,
+.how-step h3 {
+  font-size: 1.25rem;
+}
+
+.dash-heading > div:first-child > span,
+.art-title,
+.score-pill,
+.present-pill,
+.progress-foot,
+.floating-note small {
+  font-size: 0.75rem;
+}
+
+.dash-heading h2 {
+  font-size: 1.25rem;
+}
+
+.attendance-score div span,
+.week-heading,
+.next-session strong,
+.next-session small {
+  font-size: 0.875rem;
+}
+
+.week-heading span,
+.week-days div,
+.attendance-line i,
+.progress-foot,
+.attendance-line strong {
+  font-size: 0.75rem;
+}
+
+.feature-art .art-days i,
+.tiny-avatar,
+.step-number {
+  font-size: 0.75rem;
+}
+
+.site-footer {
+  font-size: 0.875rem;
+}
+
+.site-footer small {
+  font-size: 0.8125rem;
+}
+
+.main-nav,
+.button {
+  font-size: 1rem;
+}

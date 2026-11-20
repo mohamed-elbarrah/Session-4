@@ -1,0 +1,991 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+  --ink: #172b25;
+  --muted: #82918b;
+  --line: #e9efeb;
+  --green: #15845b;
+  --pale: #f4f8f5;
+  --font: "DM Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f7f9f8;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 14px;
+}
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 232px;
+  background: #fff;
+  border-right: 1px solid var(--line);
+  padding: 27px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.brand {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #17382c;
+  text-decoration: none;
+  font:
+    800 21px Manrope,
+    sans-serif;
+  letter-spacing: -0.8px;
+  padding-left: 8px;
+}
+.brand-mark {
+  width: 29px;
+  height: 29px;
+  border-radius: 9px;
+  background: #16865c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.nav-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  color: #a0ada6;
+  margin: 42px 10px 12px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-item {
+  height: 43px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #7a8982;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.nav-item:first-letter {
+  font-size: 16px;
+}
+.nav-item.active {
+  background: #edf7f1;
+  color: #147b53;
+  font-weight: 700;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding: 19px 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.help-icon {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #dce6df;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718078;
+}
+.sidebar-bottom strong,
+.sidebar-bottom small,
+.top-actions strong,
+.top-actions small {
+  display: block;
+}
+.sidebar-bottom strong {
+  font-size: 12px;
+}
+.sidebar-bottom small,
+.top-actions small {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.main-area {
+  flex: 1;
+  min-width: 0;
+}
+.topbar {
+  height: 68px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 43px;
+}
+.breadcrumbs {
+  font-size: 12px;
+  color: #84928c;
+}
+.breadcrumbs span {
+  padding: 0 9px;
+  color: #c1cbc5;
+}
+.breadcrumbs strong {
+  color: #31443b;
+  font-weight: 600;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.icon-button {
+  font-size: 19px;
+  color: #73837a;
+  margin-right: 10px;
+}
+.admin-avatar {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: #12325d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+.page-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 34px 43px 20px;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #16845b;
+  font-weight: 700;
+  margin: 0 0 7px;
+}
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+h1 {
+  font:
+    700 25px Manrope,
+    sans-serif;
+  letter-spacing: -0.6px;
+  margin-bottom: 5px;
+}
+.subtitle {
+  font-size: 12px;
+  color: #82918b;
+  margin: 0;
+}
+.outline-button,
+.filter-button {
+  background: #fff;
+  border: 1px solid #dfe8e2;
+  border-radius: 7px;
+  color: #43574c;
+  font: 600 11px var(--font);
+  padding: 10px 13px;
+}
+.profile-card,
+.detail-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+}
+.profile-card {
+  padding: 21px 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+.score-panel {
+  flex: 0 0 42%;
+  padding-left: 27px;
+  border-left: 1px solid var(--line);
+}
+.section-caption,
+.session-time > span,
+.time-left > span {
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  color: #84918b;
+}
+
+.score-line {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 9px 0 11px;
+}
+.score-line > strong {
+  font:
+    800 29px Manrope,
+    sans-serif;
+  letter-spacing: -1px;
+}
+.score-line > strong span {
+  font-size: 18px;
+}
+.trend {
+  color: #138252;
+  font-size: 10px;
+  font-weight: 700;
+}
+.trend small {
+  color: #89968f;
+  font-weight: 400;
+}
+.progress-track {
+  height: 6px;
+  background: #edf2ee;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.progress-track span {
+  display: block;
+  width: 96.5%;
+  height: 100%;
+  background: #28a66f;
+  border-radius: 9px;
+}
+.score-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: #82918b;
+  font-size: 10px;
+}
+.score-foot strong {
+  color: #16845b;
+  font-weight: 600;
+}
+
+.avtar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.student-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-right: 27px;
+}
+
+.student-avatar {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background: #12325d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font:
+    700 18px Manrope,
+    sans-serif;
+}
+.student-info h2 {
+  font:
+    700 16px Manrope,
+    sans-serif;
+  margin: 0 0 4px;
+}
+.status-pill {
+  vertical-align: 2px;
+  margin-left: 7px;
+  background: #eaf7ef;
+  color: #188252;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font: 600 9px var(--font);
+}
+.student-info > p {
+  font-size: 10px;
+  color: #8b9891;
+  margin: 0 0 14px;
+}
+.student-info > p strong {
+  color: #627169;
+  margin-left: 3px;
+}
+.student-meta {
+  display: flex;
+  gap: 36px;
+  margin-top: 16px;
+}
+.student-meta div span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.7px;
+  color: #9aa69f;
+  margin-bottom: 4px;
+}
+.student-meta div strong {
+  font-size: 11px;
+  font-weight: 600;
+}
+.detail-card {
+  overflow: hidden;
+}
+.tabs {
+  height: 51px;
+  display: flex;
+  align-items: stretch;
+  gap: 27px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+.tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #7c8b83;
+  font-size: 11px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+.tab.selected {
+  color: #16845b;
+  border-color: #16845b;
+  font-weight: 700;
+}
+.tab-count {
+  font-size: 9px;
+  border-radius: 10px;
+  background: #f0f4f1;
+  padding: 2px 6px;
+}
+.overview-content {
+  padding: 19px 23px 23px;
+}
+.current-session {
+  background: #f5faf6;
+  border: 1px solid #e7f1e9;
+  border-radius: 9px;
+  padding: 15px 17px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+.session-icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 9px;
+  background: #e2f2e7;
+  color: #20855b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+.current-copy {
+  flex: 1;
+}
+.live-label {
+  font-size: 8px;
+  letter-spacing: 0.75px;
+  color: #138252;
+  font-weight: 700;
+}
+.live-label i {
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #25a369;
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+.current-copy h2 {
+  font:
+    700 13px Manrope,
+    sans-serif;
+  margin: 3px 0;
+}
+.current-copy p {
+  font-size: 10px;
+  color: #819088;
+  margin: 0;
+}
+.session-time,
+.time-left {
+  padding-left: 21px;
+  border-left: 1px solid #e2ebe4;
+}
+.session-time strong,
+.time-left strong {
+  display: block;
+  margin-top: 6px;
+  font:
+    700 13px Manrope,
+    sans-serif;
+}
+.session-time em {
+  font-style: normal;
+  color: #aab5ae;
+  font-weight: 400;
+}
+.time-left strong {
+  color: #16845b;
+}
+.time-left strong span {
+  font: 500 10px var(--font);
+  color: #73847a;
+  margin: 0 3px;
+}
+.calendar-section {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.section-heading h2 {
+  font:
+    700 14px Manrope,
+    sans-serif;
+  margin: 0 0 4px;
+}
+.section-heading p {
+  font-size: 10px;
+  color: #89968f;
+  margin: 0;
+}
+.month-picker {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.month-picker button {
+  border: 0;
+  background: transparent;
+  color: #718179;
+  font-size: 21px;
+  line-height: 1;
+  padding: 2px 5px;
+}
+.month-picker strong {
+  font-size: 11px;
+  font-weight: 600;
+}
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.weekday,
+.calendar-days .day {
+  flex: 0 0 calc((100% - 36px) / 7);
+}
+.weekday {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #91a098;
+  padding: 5px 0 3px;
+}
+.day {
+  height: 38px;
+  border: 1px solid #e7eee9;
+  border-radius: 6px;
+  padding: 5px 8px;
+  color: #3a5145;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.day-number {
+  display: block;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 600;
+}
+.session-marks {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.session-marks i {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #dce9df;
+}
+.session-marks i.present {
+  background: #39a96b;
+}
+.session-marks i.late {
+  background: #e8b647;
+}
+.session-marks i.absent {
+  background: #df6767;
+}
+.session-marks i.upcoming {
+  background: #cbd5ce;
+}
+.day.global-present {
+  background: #a6dcb8;
+}
+.day.global-mixed {
+  background: #d9efdf;
+}
+.day.global-absence {
+  background: #edf7ef;
+}
+.day.all-absent {
+  background: #f6e2e2;
+  border-color: #edcccc;
+}
+.day.no-session {
+  background: #f5f6f5;
+  color: #bac2bd;
+  border-color: #f0f2f0;
+}
+.day.outside {
+  color: #c2cbc5;
+  background: #fafbfa;
+  border-color: #f0f2f0;
+}
+.day.today {
+  border-color: #57a77b;
+  box-shadow: 0 0 0 1px #57a77b;
+}
+.legend {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-top: 12px;
+}
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  color: #84918b;
+}
+.legend-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 1px solid #e4ebe6;
+}
+.legend-box.present {
+  background: #39a96b;
+}
+.legend-box.late {
+  background: #e8b647;
+}
+.legend-box.absent {
+  background: #df6767;
+}
+.legend-box.upcoming {
+  background: #cbd5ce;
+}
+.legend-box.none {
+  background: #f1f3f1;
+}
+.history-section {
+  padding-top: 19px;
+}
+.history-heading {
+  margin-bottom: 12px;
+}
+.filter-button {
+  padding: 8px 10px;
+  font-size: 10px;
+}
+.table-wrap {
+  overflow: hidden;
+  border: 1px solid #edf1ee;
+  border-radius: 7px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+.session-history .date-cell {
+  width: 23%;
+  vertical-align: top;
+  background: #fafcfb;
+}
+.session-history .date-cell strong {
+  color: #34473d;
+}
+.session-history td:nth-child(2) {
+  width: 18%;
+}
+.session-history td:nth-child(3) {
+  width: 20%;
+}
+.session-history td:nth-child(4) {
+  width: 18%;
+}
+.session-history td:nth-child(5) {
+  width: 21%;
+}
+.session-history td small {
+  display: block;
+  color: #8c9992;
+  font-size: 9px;
+  margin-top: 3px;
+}
+.session-history tbody tr:nth-child(3n + 1) td {
+  border-top: 1px solid #e6ece8;
+}
+.session-history td {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+th {
+  background: #fafcfb;
+  color: #89968f;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  padding: 10px 12px;
+}
+th small {
+  display: block;
+  font-size: 7px;
+  color: #a4aea8;
+  letter-spacing: 0.4px;
+  margin-top: 3px;
+}
+td {
+  border-top: 1px solid #eff2f0;
+  padding: 10px 12px;
+  vertical-align: middle;
+  font-size: 10px;
+}
+td:first-child {
+  min-width: 145px;
+}
+td strong,
+td > small {
+  display: block;
+}
+td strong {
+  font-size: 10px;
+  font-weight: 600;
+}
+td > small {
+  font-size: 9px;
+  color: #16845b;
+  margin-top: 3px;
+}
+.attendance-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #53645a;
+  font-size: 9px;
+}
+.attendance-status i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2eaa70;
+}
+.attendance-status.late i {
+  background: #e2ad39;
+}
+.attendance-status.absent i {
+  background: #db6666;
+}
+.attendance-status.pending {
+  color: #9ba69f;
+}
+.attendance-status.pending i {
+  background: #b6c0ba;
+}
+.action-link {
+  display: flex;
+  width: fit-content;
+  margin: 4px 0 0 12px;
+  color: #16845b;
+  font-size: 8px;
+  text-decoration: none;
+}
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 2px 0;
+  color: #8c9992;
+  font-size: 9px;
+}
+.table-footer a {
+  color: #16845b;
+  text-decoration: none;
+  font-weight: 600;
+}
+.placeholder-panels {
+  display: none;
+}
+footer {
+  padding: 16px 2px;
+  color: #a1aca5;
+  font-size: 9px;
+}
+footer span {
+  float: right;
+}
+
+/* Blue and yellow palette shared with the landing page; attendance statuses stay unchanged. */
+:root {
+  --ink: #132e54;
+  --muted: #71839a;
+  --line: #e4ebf3;
+  --green: #1768e8;
+  --pale: #edf5ff;
+}
+body {
+  color: #132e54;
+  font-size: 16px;
+  background: #f7f9fc;
+}
+.brand {
+  color: #12325d;
+  font:
+    700 22px Arial,
+    sans-serif;
+  letter-spacing: -1px;
+  gap: 0;
+  padding-left: 0;
+}
+.brand b {
+  color: #ffbf32;
+}
+.brand-mark {
+  background: #1768e8;
+}
+.nav-item.active {
+  background: #eaf2ff;
+  color: #1768e8;
+}
+.topbar,
+.sidebar {
+  border-color: #e4ebf3;
+}
+.eyebrow,
+.tab.selected {
+  color: #1768e8;
+}
+.tab.selected {
+  border-color: #1768e8;
+}
+.page-heading h1 {
+  color: #132e54;
+  font-size: 30px;
+}
+.subtitle {
+  font-size: 15px;
+}
+.outline-button,
+.filter-button {
+  border-color: #d9e4f1;
+  color: #29496f;
+  font-size: 13px;
+}
+.profile-card,
+.detail-card {
+  border-color: #e4ebf3;
+}
+.section-caption,
+.student-meta div span,
+.session-time > span,
+.time-left > span {
+  font-size: 11px;
+}
+.score-line > strong {
+  font-size: 34px;
+}
+.score-line > strong span {
+  font-size: 21px;
+}
+.score-foot,
+.trend {
+  font-size: 12px;
+}
+.student-info h2 {
+  font-size: 19px;
+}
+.student-info > p {
+  font-size: 12px;
+}
+.student-meta div strong {
+  font-size: 13px;
+}
+.tabs {
+  gap: 30px;
+}
+.tab {
+  font-size: 13px;
+}
+.current-session {
+  background: #edf5ff;
+  border-color: #dce9f8;
+}
+.session-icon {
+  background: #dceaff;
+  color: #1768e8;
+}
+.current-copy h2 {
+  font-size: 16px;
+}
+.current-copy p,
+.session-time strong,
+.time-left strong {
+  font-size: 12px;
+}
+.calendar-section .section-heading h2,
+.history-section .section-heading h2 {
+  font-size: 17px;
+}
+.section-heading p {
+  font-size: 12px;
+}
+.weekday {
+  font-size: 10px;
+}
+.day-number {
+  font-size: 12px;
+}
+.legend span {
+  font-size: 11px;
+}
+.session-history th {
+  font-size: 10px;
+}
+.session-history td {
+  font-size: 12px;
+}
+.session-history td strong {
+  font-size: 12px;
+}
+.session-history td small {
+  font-size: 11px;
+}
+.attendance-status {
+  font-size: 11px;
+}
+.action-link {
+  font-size: 10px;
+}
+.table-footer {
+  font-size: 11px;
+}
+footer {
+  font-size: 11px;
+}
+
+/* Dashboard type scale. Layout dimensions stay fixed; only text becomes easier to scan. */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.nav-label,
+.eyebrow,
+.section-caption,
+.session-time > span,
+.time-left > span {
+  font-size: 0.75rem;
+}
+
+.nav-item,
+.breadcrumbs,
+.top-actions,
+.subtitle,
+.score-foot,
+.trend,
+.student-info > p,
+.current-copy p,
+.section-heading p,
+.legend span,
+.table-footer,
+footer {
+  font-size: 0.875rem;
+}
+
+.sidebar-bottom strong,
+.top-actions strong,
+.sidebar-bottom small,
+.top-actions small {
+  font-size: 0.8125rem;
+}
+
+.outline-button,
+.filter-button,
+.tab,
+.current-copy h2,
+.session-time strong,
+.time-left strong,
+.calendar-section .section-heading h2,
+.history-section .section-heading h2,
+.student-meta div strong,
+.session-history td,
+.session-history td strong {
+  font-size: 1rem;
+}
+
+.student-info h2 {
+  font-size: 1.1875rem;
+}
+
+.day-number,
+.session-history td small,
+.attendance-status,
+.action-link {
+  font-size: 0.875rem;
+}
+
+.weekday,
+.session-history th {
+  font-size: 0.75rem;
+}
+
+.tab-count {
+  font-size: 0.75rem;
+}

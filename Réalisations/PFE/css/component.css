@@ -1,0 +1,79 @@
+.brand {
+  display: flex;
+  align-items: center;
+  color: #12325d;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.brand b {
+  color: #ffbf32;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.button-primary {
+  background: #1768e8;
+  color: #fff;
+}
+.button-outline {
+  border: 1px solid #1768e8;
+  color: #1768e8;
+}
+.button-yellow {
+  background: #ffca42;
+  color: #17345a;
+  padding: 11px 24px;
+}
+.eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #1768e8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.benefit-icon {
+  width: 55px;
+  height: 55px;
+  flex: 0 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 700;
+}
+.blue-icon {
+  color: #1768e8;
+  background: #dceaff;
+}
+.yellow-icon {
+  color: #e9a900;
+  background: #fff1c9;
+}
+.feature-card {
+  overflow: hidden;
+  border: 1px solid #e1eaf5;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.feature-img {
+  display: flex;
+}
+
+.feature-img img {
+  width: 100%;
+}
+.feature-number {
+  color: #1768e8;
+  font-size: 12px;
+  font-weight: 700;
+}

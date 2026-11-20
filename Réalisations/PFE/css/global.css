@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  color: #132e54;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.5px;
+}
+p {
+  color: #536b8a;
+  line-height: 1.6;
+}
+
+/* Keep the landing page readable while allowing users to zoom naturally. */
+.main-nav,
+.button {
+  font-size: 1rem;
+}
